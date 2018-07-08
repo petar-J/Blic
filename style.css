@@ -58,14 +58,15 @@ a:hover{
 }
 
 .container{
-    margin: 0 5%;
+    margin: 20px 5%;
     text-align: justify;
 }
 
 .footer{
-    padding:20px;
+    padding:30px;
     background-color: rgb(54, 54, 54);
     bottom:0;
+    font-size: 10px;
     color: #eee;
 }
 
@@ -74,5 +75,19 @@ a:hover{
     color: white;
 }
 .footer a:hover{
+    display: inline;
     background-color: initial;
+}
+
+/* Smartphones */
+@media (max-width: 600px) {
+    a[class*='hide-sm'] {
+        display: none;
+    }
+}
+/* Tablets */
+@media (max-width: 768px) {
+    a[class*='hide-md'] {
+        display: none;
+    }
 }

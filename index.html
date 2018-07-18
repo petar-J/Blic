@@ -7,20 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+        <!--For web <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="jquery.js"></script>
+        <script src="main.js"></script>
         <script>
-            $(document).ready(function(){
-                $('a').click(function(){
-                    var target = $(this.hash).offset();
-                    event.preventDefault();
-                    window.scroll({top: target.top-60, 
-                                left: 0, 
-                                behavior: 'smooth' 
-                    });
-                });
-
-            });
         </script>
 
     </head>
@@ -37,12 +27,11 @@
                 <a href="#lorem">Lorem</a>
                 <a href="#lorem2">Lorem2</a>
                 <a href="#lorem3" class='hide-sm'>Lorem3</a>
-                <a href="#lorem4" class='hide-sm hide-md'>Lorem4</a>
+                <a href="#lorem4" class='hide-md'>Lorem4</a>
             </div>
         </div>
 
         <div class="container">
-            <a name='naslov'></a>
             <div id="naslov">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus nulla ipsum odio, modi, quasi eius sit a amet dolorum hic. Distinctio tenetur magnam deleniti non reprehenderit eligendi velit magni, placeat, ex cupiditate, dolores officia autem beatae in quibusdam repellat unde aut est ratione! Delectus repudiandae saepe eaque error doloremque aspernatur impedit voluptatum non. Ducimus quos incidunt aut quasi dolores, eveniet, cum optio excepturi amet nihil suscipit eos iste. Repellendus impedit cum assumenda ullam sit quidem commodi consequatur a et soluta doloribus esse corporis sint quasi iure ducimus, fugit, veniam nostrum unde! Quibusdam magnam nemo voluptates? 
                 Possimus ipsam, architecto animi, incidunt omnis ad accusamus facere sint nemo tenetur vel illum accusantium quod deleniti, dolore natus non porro. Quaerat molestias accusamus consequuntur odit officiis consequatur fugiat maiores, ea libero omnis iusto aspernatur ab repellat laborum sit veniam, corrupti, nihil molestiae similique officia debitis error. Doloremque rem quidem ad provident laborum repellendus fuga ex, possimus quaerat? Atque eos natus velit molestiae nemo optio placeat accusamus. Veritatis debitis perspiciatis dicta natus, dolor eaque. Deserunt distinctio molestiae nisi animi libero consequatur accusamus voluptatem ullam, perspiciatis, amet, natus illo consectetur. 
@@ -51,7 +40,7 @@
                 Ab cupiditate cumque dolorum neque quas, tenetur pariatur quia exercitationem perferendis odit magnam corporis quisquam, ipsa dolore modi reprehenderit ad iusto magni? Explicabo necessitatibus placeat, non omnis officia ab ex voluptatibus neque quam nulla ipsam? Vitae, tempora dolore. Repudiandae totam numquam officia sit voluptatum possimus ipsum distinctio deleniti, consequuntur incidunt, quam consequatur quidem dicta explicabo fugit quos nihil, vero cumque accusantium veritatis expedita reiciendis excepturi suscipit eaque. Tenetur vitae officia consequuntur dolor iure asperiores ipsum fuga, libero iste. Deserunt ullam hic praesentium animi doloribus reprehenderit dicta obcaecati voluptatum ipsam, ratione cum delectus nostrum voluptatibus nesciunt dolorem qui ea nemo veritatis labore molestias. 
                 Quidem vel necessitatibus dolorum quo ex officia quae sed culpa, aut rerum mollitia consequatur rem temporibus porro! Inventore alias, voluptatibus mollitia esse excepturi quam sequi temporibus tempora at exercitationem atque?
             </div>
-            <div id="novosti">
+            <div id="novosti" class='card'>
                 <h1>Danasnje novosti</h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus et nulla exercitationem laudantium ducimus molestiae dignissimos beatae tempore optio quis eius repellat id fugiat, voluptatem iure distinctio! Maiores, perferendis consequatur? Vero at reprehenderit commodi possimus rem aut deleniti, iusto enim velit quisquam quos consequatur qui ipsam minima fugit itaque.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptatum tenetur, velit odit deserunt exercitationem eveniet. Sapiente quis ab quia, aut inventore expedita cum ipsa, sit vero natus soluta, labore ut consequuntur. Nesciunt voluptas sint necessitatibus sequi, aut quibusdam quos qui unde libero impedit cumque ad deserunt, laboriosam aperiam.
@@ -70,7 +59,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti perspiciatis assumenda quia velit illo similique consequatur aliquid tempore dolorum laborum suscipit impedit dicta porro tempora id, reiciendis, quod minus ducimus nostrum, odit totam! Numquam cum modi laboriosam doloribus facilis eligendi dolorem aliquid, ea molestiae maxime corrupti, atque tempora mollitia.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae voluptatum ducimus illum aperiam nulla sed odio incidunt possimus cupiditate cumque temporibus delectus voluptates quibusdam excepturi, suscipit tempora neque quisquam vero quaerat eos. Eos, reprehenderit sed qui odio delectus numquam dolorum quas corrupti libero, impedit repudiandae quibusdam, dolor recusandae ex!
             </div>
-            <div id="lorem">
+            <div id="lorem" class='card'>
                 <h1>Lorem</h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus et nulla exercitationem laudantium ducimus molestiae dignissimos beatae tempore optio quis eius repellat id fugiat, voluptatem iure distinctio! Maiores, perferendis consequatur? Vero at reprehenderit commodi possimus rem aut deleniti, iusto enim velit quisquam quos consequatur qui ipsam minima fugit itaque.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptatum tenetur, velit odit deserunt exercitationem eveniet. Sapiente quis ab quia, aut inventore expedita cum ipsa, sit vero natus soluta, labore ut consequuntur. Nesciunt voluptas sint necessitatibus sequi, aut quibusdam quos qui unde libero impedit cumque ad deserunt, laboriosam aperiam.
@@ -82,7 +71,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae voluptatum ducimus illum aperiam nulla sed odio incidunt possimus cupiditate cumque temporibus delectus voluptates quibusdam excepturi, suscipit tempora neque quisquam vero quaerat eos. Eos, reprehenderit sed qui odio delectus numquam dolorum quas corrupti libero, impedit repudiandae quibusdam, dolor recusandae ex!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus et nulla exercitationem laudantium ducimus molestiae dignissimos beatae tempore optio quis eius repellat id fugiat, voluptatem iure distinctio! Maiores, perferendis consequatur? Vero at reprehenderit commodi possimus rem aut deleniti, iusto enim velit quisquam quos consequatur qui ipsam minima fugit itaque.
             </div>
-            <div id="lorem2">
+
+            <div id="lorem2" class='card'>
                 <h1>Lorem2</h1>   
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptatum tenetur, velit odit deserunt exercitationem eveniet. Sapiente quis ab quia, aut inventore expedita cum ipsa, sit vero natus soluta, labore ut consequuntur. Nesciunt voluptas sint necessitatibus sequi, aut quibusdam quos qui unde libero impedit cumque ad deserunt, laboriosam aperiam.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti perspiciatis assumenda quia velit illo similique consequatur aliquid tempore dolorum laborum suscipit impedit dicta porro tempora id, reiciendis, quod minus ducimus nostrum, odit totam! Numquam cum modi laboriosam doloribus facilis eligendi dolorem aliquid, ea molestiae maxime corrupti, atque tempora mollitia.
@@ -96,7 +86,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti perspiciatis assumenda quia velit illo similique consequatur aliquid tempore dolorum laborum suscipit impedit dicta porro tempora id, reiciendis, quod minus ducimus nostrum, odit totam! Numquam cum modi laboriosam doloribus facilis eligendi dolorem aliquid, ea molestiae maxime corrupti, atque tempora mollitia.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae voluptatum ducimus illum aperiam nulla sed odio incidunt possimus cupiditate cumque temporibus delectus voluptates quibusdam excepturi, suscipit tempora neque quisquam vero quaerat eos. Eos, reprehenderit sed qui odio delectus numquam dolorum quas corrupti libero, impedit repudiandae quibusdam, dolor recusandae ex!
             </div>
-            <div id="lorem3">
+            <div id="lorem3" class='card'>
                 <h1>Lorem3</h1>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus et nulla exercitationem laudantium ducimus molestiae dignissimos beatae tempore optio quis eius repellat id fugiat, voluptatem iure distinctio! Maiores, perferendis consequatur? Vero at reprehenderit commodi possimus rem aut deleniti, iusto enim velit quisquam quos consequatur qui ipsam minima fugit itaque.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptatum tenetur, velit odit deserunt exercitationem eveniet. Sapiente quis ab quia, aut inventore expedita cum ipsa, sit vero natus soluta, labore ut consequuntur. Nesciunt voluptas sint necessitatibus sequi, aut quibusdam quos qui unde libero impedit cumque ad deserunt, laboriosam aperiam.
@@ -108,7 +98,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molestiae voluptatum ducimus illum aperiam nulla sed odio incidunt possimus cupiditate cumque temporibus delectus voluptates quibusdam excepturi, suscipit tempora neque quisquam vero quaerat eos. Eos, reprehenderit sed qui odio delectus numquam dolorum quas corrupti libero, impedit repudiandae quibusdam, dolor recusandae ex!
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam natus et nulla exercitationem laudantium ducimus molestiae dignissimos beatae tempore optio quis eius repellat id fugiat, voluptatem iure distinctio! Maiores, perferendis consequatur? Vero at reprehenderit commodi possimus rem aut deleniti, iusto enim velit quisquam quos consequatur qui ipsam minima fugit itaque.
             </div>
-            <div id="lorem4">
+            <div id="lorem4" class='card'>
                 <h1>Lorem4</h1>   
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptatum tenetur, velit odit deserunt exercitationem eveniet. Sapiente quis ab quia, aut inventore expedita cum ipsa, sit vero natus soluta, labore ut consequuntur. Nesciunt voluptas sint necessitatibus sequi, aut quibusdam quos qui unde libero impedit cumque ad deserunt, laboriosam aperiam.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corrupti perspiciatis assumenda quia velit illo similique consequatur aliquid tempore dolorum laborum suscipit impedit dicta porro tempora id, reiciendis, quod minus ducimus nostrum, odit totam! Numquam cum modi laboriosam doloribus facilis eligendi dolorem aliquid, ea molestiae maxime corrupti, atque tempora mollitia.
@@ -125,7 +115,7 @@
         </div>
 
         <div class="footer">
-            No copyright infringement intended
+            No copyright infringement intended lol
             <a href='#flag'>Back to top</a>
         </div>
 

@@ -1,5 +1,4 @@
 
-
 body {
     font-family: "Roboto",sans-serif;;
     padding: 0;
@@ -74,6 +73,7 @@ a:hover{
     float: right;
     color: white;
 }
+
 .footer a:hover{
     display: inline;
     background-color: initial;

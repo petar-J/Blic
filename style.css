@@ -24,6 +24,8 @@ img{
     width: 100%; 
     top: 0;
     margin: 0;
+    overflow: hidden;
+    max-height: 52px;
 }
 
 .nav_container{
@@ -34,6 +36,7 @@ a{
     display:inline;
     text-decoration: none;
     transition: all 200ms ease-in-out;
+    color: white;
 }
 
 .nav a, .active{
@@ -42,14 +45,13 @@ a{
     padding: 18px 15px;
     font-size: 16px;
     text-transform: uppercase;
-    color: white;
 }
 
 a:hover{
     background-color: rgb(212, 88, 88);
 }
 
-.active{
+a.active{
     background-color: white;
     font-weight: 600;
     margin: 0;
@@ -77,17 +79,4 @@ a:hover{
 .footer a:hover{
     display: inline;
     background-color: initial;
-}
-
-/* Smartphones */
-@media (max-width: 600px) {
-    a[class*='hide-sm'] {
-        display: none;
-    }
-}
-/* Tablets */
-@media (max-width: 768px) {
-    a[class*='hide-md'] {
-        display: none;
-    }
 }
